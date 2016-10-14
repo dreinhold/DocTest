@@ -13,17 +13,6 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys
-from unittest.mock import MagicMock
-
-class Mock(MagicMock):
-    @classmethod
-    def __getattr__(cls, name):
-            return Mock()
-
-MOCK_MODULES = ['pkg-resources', ]
-sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
-
 import sphinx_rtd_theme
 
 html_theme = "sphinx_rtd_theme"
