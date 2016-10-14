@@ -1,6 +1,6 @@
-============
-Installation
-============
+=================
+Installation Test
+=================
 This document will show you how to get up and running with Trunk Player.
 
 Currently going to be based on a Debian like system Ubuntu
